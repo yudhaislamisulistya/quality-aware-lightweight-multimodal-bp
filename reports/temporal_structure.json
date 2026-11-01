@@ -1,0 +1,27 @@
+{
+  "kind": "structural shape probe, not a BP experiment",
+  "input_shape": [
+    1,
+    1,
+    3000
+  ],
+  "shapes": {
+    "temporal": [
+      1,
+      32,
+      125
+    ],
+    "ordered_pool": [
+      1,
+      32,
+      8
+    ],
+    "embedding": [
+      1,
+      32
+    ]
+  },
+  "pre_pool_feature_stride_samples": 24,
+  "pre_pool_feature_spacing_seconds": 0.192,
+  "claim_scope": "Coarse ordered bins remain; no explicit inter-channel delay operator is implemented."
+}

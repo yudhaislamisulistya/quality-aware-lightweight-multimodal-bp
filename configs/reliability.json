@@ -1,0 +1,15 @@
+{
+  "mode": "cross-fitted-task-reliability-development",
+  "reference_study": "results/factorial",
+  "reference_quick_study": "results/factorial_smoke",
+  "crossfit_folds": 3,
+  "crossfit_seed": 820391,
+  "ridge_alpha": 10.0,
+  "risk_floor_mmHg": 1.0,
+  "risk_clean_sample_weight": 0.5,
+  "shuffle_repetitions": 5,
+  "shuffle_seed": 631217,
+  "primary_comparison": "adaptive_minus_bp_only",
+  "primary_conditions": ["clean", "known_corruption_mean"],
+  "primary_targets": ["SBP", "DBP"]
+}

@@ -1,0 +1,14 @@
+{
+  "new_source_release_tests": {
+    "passed": 46,
+    "skipped": 8,
+    "failed": 0,
+    "skip_reason": "Private completed-suite artifacts are intentionally absent from the source-only repository."
+  },
+  "checkpoint_parameter_counts_verified": 108,
+  "historical_roles_initializer_matches_original": true,
+  "new_training_performed": false,
+  "fresh_dependency_install_tested": false,
+  "raw_data_included": false,
+  "participant_level_artifacts_included": false
+}

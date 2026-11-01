@@ -1,0 +1,21 @@
+........ss..........ss............................ssss                   [100%]
+=============================== warnings summary ===============================
+../../.venv/lib/python3.13/site-packages/wfdb/io/annotation.py:3062
+  <executed-environment>/.venv/lib/python3.13/site-packages/wfdb/io/annotation.py:3062: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_class_table.set_index(
+
+../../.venv/lib/python3.13/site-packages/wfdb/io/annotation.py:3232
+  <executed-environment>/.venv/lib/python3.13/site-packages/wfdb/io/annotation.py:3232: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_label_table.set_index(ann_label_table["label_store"].values, inplace=True)
+
+tests/test_pipeline.py::test_wfdb_digital_checksums_and_path_boundary
+tests/test_pipeline.py::test_wfdb_digital_checksums_and_path_boundary
+tests/test_pipeline.py::test_wfdb_digital_checksums_and_path_boundary
+  <executed-environment>/.venv/lib/python3.13/site-packages/wfdb/io/_header.py:172: Pandas4Warning: The inplace keyword in DataFrame.drop is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    record_specs.drop("n_seg", inplace=True)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+46 passed, 8 skipped, 5 warnings in 2.89s

@@ -1,0 +1,19 @@
+{
+  "mode": "full",
+  "seeds": [17, 42, 73],
+  "split_seed": 2026,
+  "quick_subjects": null,
+  "epochs": 30,
+  "patience": 6,
+  "batch_size": 64,
+  "threads": 4,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "quality_loss_weight": 0.2,
+  "min_delta_mmHg": 0.001,
+  "bootstrap_repetitions": 1000,
+  "latency_warmup": 10,
+  "latency_repetitions": 100,
+  "device": "auto",
+  "models": ["ecg_only", "ppg_only", "standard_fusion", "quality_fusion", "proposed_no_gate", "proposed", "proposed_dense", "cnn_bigru"]
+}

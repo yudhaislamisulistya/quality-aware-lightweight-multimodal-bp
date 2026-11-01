@@ -1,0 +1,5 @@
+model,encoders,quality_heads,bp_heads,risk_head,total_stored_parameters,requires_grad_parameters,buffer_elements_excluded
+unimodal,15328,657,1122,0,17107,17107,0
+feature_A_to_D,30656,1314,4194,0,36164,36164,0
+dense_feature_control,44944,1314,4194,0,50452,50452,0
+late_fusion_all_policies,30656,1314,2244,100,34314,0,60

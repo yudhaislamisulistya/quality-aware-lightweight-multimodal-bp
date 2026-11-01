@@ -1,0 +1,63 @@
+{
+  "definition": "sum(p.numel()) over all Parameter objects, regardless of requires_grad or policy use",
+  "excluded": "buffers, preprocessing, hyperparameters, parameter-free operations and cross-fit teacher replicas",
+  "models": [
+    {
+      "model": "unimodal",
+      "encoders": 15328,
+      "quality_heads": 657,
+      "bp_heads": 1122,
+      "risk_head": 0,
+      "total_stored_parameters": 17107,
+      "requires_grad_parameters": 17107,
+      "buffer_elements_excluded": 0
+    },
+    {
+      "model": "feature_A_to_D",
+      "encoders": 30656,
+      "quality_heads": 1314,
+      "bp_heads": 4194,
+      "risk_head": 0,
+      "total_stored_parameters": 36164,
+      "requires_grad_parameters": 36164,
+      "buffer_elements_excluded": 0
+    },
+    {
+      "model": "dense_feature_control",
+      "encoders": 44944,
+      "quality_heads": 1314,
+      "bp_heads": 4194,
+      "risk_head": 0,
+      "total_stored_parameters": 50452,
+      "requires_grad_parameters": 50452,
+      "buffer_elements_excluded": 0
+    },
+    {
+      "model": "late_fusion_all_policies",
+      "encoders": 30656,
+      "quality_heads": 1314,
+      "bp_heads": 2244,
+      "risk_head": 100,
+      "total_stored_parameters": 34314,
+      "requires_grad_parameters": 0,
+      "buffer_elements_excluded": 60
+    }
+  ],
+  "checkpoint_verification": {
+    "checkpoints_verified": 108,
+    "stored_counts_by_model": {
+      "A_uniform_clean": 36164,
+      "B_gated_clean": 36164,
+      "C_uniform_augmented": 36164,
+      "D_gated_augmented": 36164,
+      "dense_uniform_clean": 50452,
+      "ecg_only_clean": 17107,
+      "ppg_only_clean": 17107,
+      "adaptive_risk_fusion": 34314,
+      "bp_only_risk_fusion": 34314,
+      "quality_fusion": 34314,
+      "static_risk_fusion": 34314,
+      "uniform_fusion": 34314
+    }
+  }
+}
